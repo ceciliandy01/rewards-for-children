@@ -37,7 +37,8 @@ fun HomeScreen(
             }) {
                 Icon(Icons.Default.Add, contentDescription = "Add Reward")
             }
-        }
+        },
+        bottomBar = { BottomNavigationBar(navController = navController) }
     ) { paddingValues ->
         LazyColumn(
             modifier = Modifier

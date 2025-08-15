@@ -21,11 +21,7 @@ import com.jinen.intelli.rewards_for_children.ui.navigation.Screen
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()
-    Scaffold(
-        bottomBar = { BottomNavigationBar(navController = navController) }
-    ) { paddingValues ->
-        NavGraph(navController = navController)
-    }
+    NavGraph(navController = navController)
 }
 
 @Composable
